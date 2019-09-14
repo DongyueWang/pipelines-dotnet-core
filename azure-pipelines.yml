@@ -6,11 +6,8 @@
 trigger:
 - master
 
-#pool:
-#  vmImage: 'ubuntu-latest'
-pool: 
-  name Default
-  demands:agent.os -equals Windows_NT 
+pool:
+  vmImage: 'ubuntu-latest'
 
 variables:
   buildConfiguration: 'Release'
