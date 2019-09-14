@@ -9,7 +9,7 @@ trigger:
 #pool:
 #  vmImage: 'ubuntu-latest'
 pool: 
-  name default
+  name Default
   demands:agent.os -equals Windows_NT 
 
 variables:
