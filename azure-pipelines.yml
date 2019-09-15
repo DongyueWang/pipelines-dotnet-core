@@ -28,3 +28,6 @@ steps:
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'myWebsiteName'
+- task: DownloadPipelineArtifact@2
+  inputs:
+    artifact: 'myWebsiteName'
