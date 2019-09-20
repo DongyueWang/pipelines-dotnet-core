@@ -43,4 +43,4 @@ steps:
   inputs:
     command: 'push'
     feedsToUse: 'select'
-    vstsFeed: 'myTestFeed'
+    vstsFeed: 'artifactFeed'
