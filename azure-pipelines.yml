@@ -33,14 +33,15 @@ steps:
     artifactName: 'myWebsiteName'
 
 # Package a project
-- task: NuGetCommand@2
-  inputs:
-    command: 'pack'
-    packagesToPack: '**/*.csproj'
-    packDestination: '$(Build.ArtifactStagingDirectory)'
+#- task: NuGetCommand@2
+#  inputs:
+#
+#    command: 'pack'
+#    packagesToPack: '**/*.csproj'
+#    packDestination: '$(Build.ArtifactStagingDirectory)'
 # Push a project
-- task: NuGetCommand@2
-  inputs:
-    command: 'push'
-    feedsToUse: 'select'
-    vstsFeed: 'artifactFeed'
+#- task: NuGetCommand@2
+#  inputs:
+#    command: 'push'
+#    feedsToUse: 'select'
+#    vstsFeed: 'artifactFeed'
