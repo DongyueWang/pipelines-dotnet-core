@@ -31,3 +31,7 @@ steps:
 - task: DownloadPipelineArtifact@2
   inputs:
     artifact: 'myWebsiteName'
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    packagesToPack: '**/*.csproj'
